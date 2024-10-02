@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" width="device-width">
     <title>Portfolio</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
     <style>
+        nav {
+            text-align: center;
+            padding: 15px 15px;
+            background-color: black;
+        }
+
+        nav a {
+            color: yellow;
+            font-size: larger;
+            padding: 40px;
+            text-decoration: none;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
+            font-weight: 300;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        nav {
-            background-color: black;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #ffeb3b;
-            text-decoration: none;
-            font-size: 20px;
-            margin: 0 20px;
-        }
+
         header {
-            background-color: #4CAF50;
+            background-color: #4caf50;
             color: white;
             text-align: center;
-            padding: 50px;
+            font-weight: bold;
+            padding: 30px;
         }
-        header h1 {
-            font-size: 40px;
-        }
-        header h1 span {
-            font-style: italic;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-    
+
         img {
           width: 25%;
         height: 25%;
@@ -51,75 +45,70 @@
         margin-top: 20PX;
         border-radius: 10px;
         }
-        .description {
-            display: inline-block;
+
+        p {
             background-color: #E0E0E0;
-            width: 300px;
-            height: 150px;
-            vertical-align: top;
-            padding: 20px;
-        }
-        .red-bar {
-            background-color: red;
-            height: 10px;
-            width: 100%;
-            margin: 30px 0;
-        }
-        .buttons {
+            font-size: large;
+            color: black;
+            display: inline-block;
+            width: 800px;
             margin: 20px;
         }
-        .buttons a {
+
+        .red {
+            background-color: red;
+            width: 100%;
+            height: 20px;
+            margin: 30px 0; 
+        }
+
+        .button {
+            text-align: center;
+            margin: 20px auto; 
+        }
+
+        .button a {
             background-color: #2196F3;
             color: white;
             padding: 10px 20px;
-            text-decoration: none;
             margin: 0 10px;
             border-radius: 5px;
+            text-decoration: none; 
         }
+
         footer {
             background-color: black;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 15px;
+            bottom: 0%; 
             width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
+
 <body>
+    <nav>
+        <a href="">Home</a>
+        <a href="contact-me.html">Contact Me</a>
+    </nav>
+    <header>
+        <h1>Hello, I am Chandan Gupta V</h1>
+    </header>
+    <main>
+        <img src="proflie.jpeg" alt="profile" />
+        <p>
+            LCS Implementation Specialist, Technical Solutions
+        </p>
 
-<!-- Navigation -->
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Contact me</a>
-</nav>
-
-<!-- Header -->
-<header>
-    <h1>Hello, I am <span>Chandan Gupta N</span></h1>
-</header>
-
-<!-- Main Section -->
-<main>
-    <div class="profile-pic"> <img src="proflie.jpeg" alt="profile" /> </div>
-    
-    <div class="description">
-        <p>LCS Implementation Specialist, Technical Solutions</p>
-    </div>
-    
-    <div class="red-bar"></div>
-    
-    <div class="buttons">
-        <a href="#">Contact me</a>
-        <a href="#" download="Your_CV.pdf">Download CV</a>
-    </div>
-</main>
-
-<!-- Footer -->
-<footer>
-    All rights reserved @ 2024
-</footer>
-
+        <div class="red"></div>
+        <div class="button">
+            <a href="contact-me.html">Contact Me</a>
+            <a href="resume.pdf" download>Download CV</a>
+        </div>
+    </main>
+    <footer>
+        All Rights Reserved @ 2024
+    </footer>
 </body>
 </html>
