@@ -87,40 +87,63 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            max-width: 600px;
+            max-width: 600px; /* Set a max-width for better layout */
+        }
+
+        form label {
+            display: none; /* Hide the label */
         }
 
         form input,
         form textarea {
             padding: 10px;
             margin-bottom: 15px;
+            margin-right: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            background-color: lightgrey;
+            color:black;
+            
+            
         }
 
         form input {
-            width: calc(50% - 10px); /* Half width minus margin */
+            width: calc(50% - 10px); 
         }
 
         form textarea {
-            width: 100%; /* Set the textarea to full width */
+            width: 560px ; 
         }
 
         form input::placeholder,
         form textarea::placeholder {
             color: #aaa; 
             font-weight: normal;
+            
         }
 
         h2 {
             margin-top: 20px;
         }
+
+        form input[type="submit"] {
+            background-color: orange;
+            color: white;
+            font-size: 14px;
+            border-radius: 3px;
+            margin-left: 20px;
+            position: relative;
+            align-self: flex-start;
+            margin-top: 10px;
+            left:430px;
+            width:150px;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index(1).html">Home</a>
-        <a href="contact-me.html">Contact Me</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Me</a>
     </nav>
     <header>
         <h1>Contact Me</h1>
@@ -130,17 +153,17 @@
         
         <div class="contact-info">
             <span class="number">
-                Call me at: <a href="tel:+9199999999999">9999999999</a>
+                Call me at: <a href="tel:+919999999999">9999999999</a>
             </span>
             <span class="email">
-                Email me at: <a href="mailto:chandangupta@gmail.com">chandangupta@gmail.com</a>
+                Email me at: <a href="mailto:chandan@gmail.com">chandan@gmail.com</a>
             </span>
             <span class="meet">
                 Meet me at: <a href="https://maps.app.goo.gl/mVV5EJdhAeD4Ys3a7">Bengaluru</a>
             </span>
         </div>
         
-        <h2>Feel free to get in touch!</h2>
+        <h2>Feel free to get in touch with me!</h2>
         <form>
             <div class="form-row">
                 <input type="text" id="name" placeholder="Your Name" required>
